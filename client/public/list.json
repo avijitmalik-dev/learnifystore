@@ -1,0 +1,73 @@
+[{
+    "id":1,
+    "name":"web development",
+    "title":"The Complete 2024 Web Development Bootcamp",
+    "author":"avijit malik",
+    "rating": 4,
+    "prices":"499",
+    "category":"Free",
+    "images":"https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg"
+},{
+    "id":2,
+    "name":"Android development",
+    "title":"Android Java Masterclass - Become an App Developer",
+    "author":"avijit malik",
+    "rating": 4,
+    "prices":"699",
+    "category":"Free",
+    "images":"https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg"
+},{
+    "id":3,
+    "name":"ios development",
+    "title":"iOS 18, SwiftUI 6, & Swift 6: Build iOS Apps From Scratch",
+    "author":"avijit malik",
+    "rating": 4,
+    "prices":"1499",
+    "category":"Free",
+    "images":"https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg"
+},{
+    "id":4,
+    "name":"SAP and  ERP development",
+    "title":"SAP for Beginners course | SAP ERP with practice",
+    "author":"avijit malik",
+    "rating": 3.5,
+    "prices":"2100",
+    "category":"paid",
+    "images":"https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg"
+},{
+    "id":5,
+    "name":"Busniess development",
+    "title":"Business Analysis Fundamentals - ECBA, CCBA, CBAP endorsed",
+    "author":"avijit malik",
+    "rating": 4,
+    "prices":"1850",
+    "category":"Free",
+    "images":"https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg"
+},{
+    "id":6,
+    "name":"MLops development",
+    "title":"Complete Machine Learning,NLP Bootcamp MLOPS & Deployment",
+    "author":"avijit malik",
+    "rating": 4,
+    "prices":"2000",
+    "category":"Free",
+    "images":"https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg"
+},{
+    "id":7,
+    "name":"System development",
+    "title":"Mastering the System Design",
+    "author":"avijit malik",
+    "rating": 4,
+    "prices":"2500",
+    "category":"Free",
+    "images":"https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg"
+},{
+    "id":8,
+    "name":"Data Science",
+    "title":"The Data Science Course: Complete Data Science Bootcamp 2024",
+    "author":"avijit malik",
+    "rating": 4,
+    "prices":"2500",
+    "category":"Free",
+    "images":"https://img.freepik.com/free-vector/flat-design-cms-illustration_23-2148825220.jpg"
+}]
