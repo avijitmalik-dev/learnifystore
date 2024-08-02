@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-
+import { useSelector } from "react-redux";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Badge } from "./ui/badge";
 import CartIcon from "./CartIcon";
+import { Link } from "react-router-dom";
 
 export default function Navber() {
   const [sticky, setSticky] = useState(false);
+  const cart = useSelector((state) => state.cart);
+  const count = cart.length;
+  console.log(count);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,25 +28,37 @@ export default function Navber() {
       }`}
     >
       <div>
-        <h1 className="text-2xl font-bold">
-          Learnify
-          <span className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 bg-clip-text text-transparent">
-            Store
-          </span>
-        </h1>
+        <Link to="/">
+          <h1 className="text-2xl font-bold">
+            Learnify
+            <span className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 bg-clip-text text-transparent">
+              Store
+            </span>
+          </h1>
+        </Link>
       </div>
       <div className="flex flex-row gap-8 list-none capitalize font-bold">
-        <li>home</li>
-        <li>course</li>
-        <li>plan & prices</li>
-        <li>abouts</li>
+        <Link to="/">home</Link>
+        <Link to="/courese">course</Link>
+        <Link to="/">plan & prices</Link>
+        <Link to="/abouts">abouts</Link>
       </div>
+
       <div className="flex flex-row items-center gap-7">
         {/* <Input/> */}
-        <CartIcon count={2} />
+        <Link to="/addItems">
+          <CartIcon count={count} />
+        </Link>
+
         <div className="flex flex-row gap-1">
-          <Button className="h-10 w-20 rounded-none bg-white border border-black text-black hover:bg-inherit">Log in</Button>
-          <Button className="h-10 w-20 rounded-none">Sing up</Button>
+          <Link to="/login">
+            <Button className="h-10 w-20 rounded-none bg-white border border-black text-black hover:bg-inherit">
+              Log in
+            </Button>
+          </Link>
+          <Link to="/register">
+            <Button className="h-10 w-20 rounded-none">Sing up</Button>
+          </Link>
         </div>
       </div>
     </div>

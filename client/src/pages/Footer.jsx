@@ -7,7 +7,7 @@ const list = ["Nasdaq", "Volkswagen", "Box", "NetApp", "Eventbrite"];
   
 export default function Footer() {
   return (
-    <div className="px-10 bg-slate-700 text-white grid grid-rows-3 gap-8">
+    <div className="px-10 bg-slate-700 text-white grid grid-rows-3 gap-8 overflow-hidden w-full">
       <div className="flex flex-row justify-between items-center py-5">
         <h1 className="font-bold text-lg">
           Top companies choose{" "}
@@ -21,7 +21,6 @@ export default function Footer() {
               className="border border-slate-400 px-4 py-2 rounded-md"
             >
               {" "}
-              {/* Added border styles */}
               <h1 className="font-bold text-xl">{item}</h1>
             </div>
           ))}

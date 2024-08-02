@@ -8,8 +8,8 @@ export default function Coures() {
   return (
     <>
       <div className="p-10 bg-slate-100">
-        <div>
-          <h1>ALL BROWSER COURES</h1>
+        <div className="p-3">
+          <h1 className="font-bold  border p-2 w-52">ALL BROWSER COURES</h1>
         </div>
         <div className="grid grid-cols-4 gap-7 rounded-md">
             {listdata.map((item) =>(
